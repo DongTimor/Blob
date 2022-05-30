@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_4x4_1"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_5"
+        app:layout_constraintTop_toTopOf="@+id/item_4x4_2"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_2"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_4x4_6"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_6"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_3"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_4x4_7"
+        app:layout_constraintEnd_toEndOf="@+id/item_4x4_7"
+        app:layout_constraintStart_toEndOf="@+id/item_4x4_2"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_4"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_constraintBottom_toTopOf="@+id/item_4x4_8"
+        app:layout_constraintEnd_toEndOf="@+id/item_4x4_8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item_4x4_3"
+        app:layout_constraintTop_toTopOf="@+id/item_4x4_3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_5"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/item_4x4_6"
+        app:layout_constraintTop_toTopOf="@+id/item_4x4_6"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_6"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/item_4x4_7"
+        app:layout_constraintTop_toTopOf="@+id/item_4x4_7"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_7"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_4x4_11"
+        app:layout_constraintEnd_toEndOf="@+id/item_4x4_11"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_8"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginStart="12dp"
+        app:layout_constraintStart_toEndOf="@+id/item_4x4_7"
+        app:layout_constraintTop_toTopOf="@+id/item_4x4_7"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_9"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_4x4_10"
+        app:layout_constraintEnd_toStartOf="@+id/item_4x4_10"
+        app:layout_constraintTop_toBottomOf="@+id/item_4x4_5"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_10"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_constraintBottom_toBottomOf="@+id/item_4x4_11"
+        app:layout_constraintEnd_toStartOf="@+id/item_4x4_11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_6"
+        app:layout_constraintTop_toBottomOf="@+id/item_4x4_6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_11"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_12"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_4x4_11"
+        app:layout_constraintStart_toEndOf="@+id/item_4x4_11"
+        app:layout_constraintTop_toBottomOf="@+id/item_4x4_8"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_13"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_constraintBottom_toBottomOf="@+id/item_4x4_14"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_9"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_14"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/item_4x4_15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_10"
+        app:layout_constraintTop_toBottomOf="@+id/item_4x4_10"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_15"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/item_4x4_11"
+        app:layout_constraintTop_toBottomOf="@+id/item_4x4_11"
+        app:srcCompat="@drawable/blue" />
+
+    <ImageView
+        android:id="@+id/item_4x4_16"
+        android:layout_width="180px"
+        android:layout_height="180px"
+        app:layout_constraintBottom_toBottomOf="@+id/item_4x4_15"
+        app:layout_constraintEnd_toEndOf="@+id/item_4x4_12"
+        app:srcCompat="@drawable/blue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

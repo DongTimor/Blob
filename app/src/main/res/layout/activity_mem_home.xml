@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    tools:context=".Mem_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/choosetime"
+        android:layout_width="187dp"
+        android:layout_height="167dp"
+        android:background="@drawable/timeboard"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/timeboardok"
+            android:layout_width="46dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/omori_font"
+            android:gravity="center"
+            android:text="ok"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edittime"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:fontFamily="@font/omori_font"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:text="50"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Custom"
+        android:layout_width="900px"
+        android:layout_height="610px"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/customboard"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:id="@+id/mode_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tiles_bar"
+            tools:ignore="MissingConstraints"
+
+            >
+
+            <ImageView
+                android:id="@+id/customdefault"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/default_yes" />
+
+            <ImageView
+                android:id="@+id/customcustom"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/custom_no"
+
+                />
+
+            <TextView
+                android:id="@+id/customboartok"
+                android:layout_width="46dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="center"
+                android:text="ok"
+                android:textSize="23dp" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/tl"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="54dp"
+            android:fontFamily="@font/omori_font"
+            android:text="Tiles"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/customsubtractiontiles"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/omori_font"
+            android:gravity="end"
+            android:text="-"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/customplustiles"
+            app:layout_constraintEnd_toStartOf="@+id/customplustiles"
+            app:layout_constraintTop_toTopOf="@+id/customplustiles" />
+
+        <TextView
+            android:id="@+id/customplustiles"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="-160dp"
+            android:fontFamily="@font/omori_font"
+            android:gravity="end"
+            android:text="+"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tl"
+            app:layout_constraintLeft_toRightOf="@id/tl"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tl" />
+
+        <GridLayout
+            android:id="@+id/tiles_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            android:rowCount="1"
+            app:layout_constraintBottom_toTopOf="@id/mode_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time_bar"
+            tools:ignore="MissingConstraints"
+
+            >
+
+
+            <TextView
+                android:id="@+id/customboartiles"
+                android:layout_width="36dp"
+                android:layout_height="14dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/customboartiles2"
+                android:layout_width="36dp"
+                android:layout_height="14dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/customboartiles3"
+                android:layout_width="36dp"
+                android:layout_height="14dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/customboartiles4"
+                android:layout_width="36dp"
+                android:layout_height="14dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="15dp" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:id="@+id/time_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:columnCount="5"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+
+            >
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/omori_font"
+                android:text="Times.................................."
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/customboardtime"
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="end"
+                android:text="45"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="21dp"
+                android:fontFamily="@font/omori_font"
+                android:text=" s "
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/customsubtractiontime"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="end"
+                android:text="-"
+                android:textSize="21dp" />
+
+            <TextView
+                android:id="@+id/customplustime"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="end"
+                android:text="+"
+                android:textSize="21dp" />
+
+        </GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/backpick4"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#44BEDF"
+        android:textSize="28dp"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/mem_custom"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/mem_play"
+        app:srcCompat="@drawable/puzzlecustom" />
+
+    <ImageView
+        android:id="@+id/mem_play"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/memorizeplay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

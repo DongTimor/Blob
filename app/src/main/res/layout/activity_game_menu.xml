@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game_menu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game1_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/game_board">
+
+
+        <TextView
+            android:id="@+id/backpick"
+            android:layout_width="111dp"
+            android:layout_height="64dp"
+            android:fontFamily="@font/omori_font"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="#44BEDF"
+            android:textSize="40dp"
+            tools:ignore="DuplicateIds,MissingConstraints" />
+
+        <TextView
+
+            android:id="@+id/text_pick"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/omori_font"
+            android:gravity="center"
+            android:text="PICK A GAME"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ln_attempt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/ln_highest"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/game_bar">
+
+            <TextView
+                android:id="@+id/attemp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="start"
+                android:paddingLeft="50dp"
+                android:text="Attempts:"
+                android:textColor="@color/white"
+                android:textSize="45dp" />
+
+            <GridLayout
+                android:id="@+id/attemp_board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#717AEA"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#EF9D43"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#ED60D6"
+                    android:textSize="32dp" />
+            </GridLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/ln_highest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/ln_total"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ln_attempt">
+
+            <TextView
+                android:id="@+id/hightest"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:fontFamily="@font/omori_font"
+                android:gravity="start"
+                android:paddingLeft="50dp"
+                android:text="Highest ranks:"
+                android:textColor="@color/white"
+                android:textSize="45dp" />
+
+            <GridLayout
+                android:id="@+id/highest_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="1">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="A+"
+                    android:textColor="#717AEA"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="S-"
+                    android:textColor="#EF9D43"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="36dp"
+                    android:layout_columnWeight="1"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="D"
+                    android:textColor="#ED60D6"
+                    android:textSize="32dp" />
+            </GridLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ln_highest">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tota"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="start"
+                    android:paddingLeft="30dp"
+                    android:text="Total Time:"
+                    android:textColor="@color/white"
+                    android:textSize="45dp" />
+
+                <TextView
+
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="#BBBCCC"
+                    android:textSize="32dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/avg"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:fontFamily="@font/omori_font"
+                    android:gravity="start"
+                    android:paddingLeft="30dp"
+                    android:text="Avg. Rank"
+                    android:textColor="@color/white"
+                    android:textSize="45dp" />
+
+                <GridLayout
+                    android:id="@+id/avg_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnCount="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:rowCount="1">
+
+                    <TextView
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="0.3"
+                        android:fontFamily="@font/omori_font"
+                        android:gravity="end|center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="A-"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="start"
+                        android:src="@drawable/ranka" />
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <GridLayout
+            android:id="@+id/game_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            app:layout_constraintBottom_toTopOf="@id/ln_attempt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pick"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/Flexchoose"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:src="@drawable/flex" />
+
+            <ImageView
+                android:id="@+id/Memchoose"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+
+                android:src="@drawable/mem" />
+
+            <ImageView
+                android:id="@+id/Equachoose"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_columnWeight="1"
+                android:src="@drawable/equa" />
+
+
+        </GridLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

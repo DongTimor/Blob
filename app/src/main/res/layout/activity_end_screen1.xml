@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/end1layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".EndScreen1">
+
+
+    <ImageView
+        android:id="@+id/flexcustom"
+        android:layout_width="1080px"
+        android:layout_height="1920px"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/result" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="center"
+        android:text="Result"
+        android:textColor="@color/white"
+        android:textSize="65dp"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="65dp"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/rank2"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="65dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="Rounds :"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/rounds"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/rounds2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <TextView
+        android:id="@+id/finalscrore"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/finalscrore2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="10000"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/highestcombo"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/highestcombo2"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/corrects"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/corrects2"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="Final score :"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="Your Rank :"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="Highest Combo :"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="158dp"
+        android:layout_height="55dp"
+        android:fontFamily="@font/omori_font"
+        android:gravity="left|center"
+        android:text="Corrects :"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <ImageView
+        android:id="@+id/retryFlex"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="@+id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.922"
+        app:srcCompat="@drawable/retry1" />
+
+    <ImageView
+        android:id="@+id/homeFlex"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/home1" />
+
+    <TextView
+        android:id="@+id/nextFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@id/flexcustom"
+        app:layout_constraintEnd_toEndOf="@id/flexcustom"
+        app:layout_constraintStart_toStartOf="@id/flexcustom"
+        app:layout_constraintTop_toTopOf="@id/flexcustom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

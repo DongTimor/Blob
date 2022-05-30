@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:columnCount="3">
+
+            <LinearLayout
+                android:layout_rowWeight="1"
+                android:id="@+id/item5x5_num_1"
+                android:layout_width="65dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/arrow_5x5_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/mem_arrow" />
+
+                <ImageView
+                    android:id="@+id/memblock5x5_1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/green" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_rowWeight="1"
+                android:id="@+id/item5x5_num_2"
+                android:layout_width="65dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/arrow_5x5_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/mem_arrow" />
+
+                <ImageView
+                    android:id="@+id/memblock5x5_2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/green" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_rowWeight="1"
+                android:id="@+id/item5x5_num_3"
+                android:layout_width="65dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/arrow_5x5_3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/mem_arrow" />
+
+                <ImageView
+                    android:id="@+id/memblock5x5_3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/green" />
+            </LinearLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:columnCount="3">
+
+            <LinearLayout
+
+                android:layout_rowWeight="1"
+                android:id="@+id/item5x5_num_4"
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/arrow_5x5_4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/mem_arrow" />
+
+                <ImageView
+                    android:id="@+id/memblock5x5_4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/green" />
+            </LinearLayout>
+            <Space
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="0.3"
+                />
+            <LinearLayout
+                android:layout_rowWeight="1"
+                android:id="@+id/item5x5_num_5"
+                android:layout_width="65dp"
+                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/arrow_5x5_5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/mem_arrow" />
+
+                <ImageView
+                    android:id="@+id/memblock5x5_5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    app:srcCompat="@drawable/green" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
